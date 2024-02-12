@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div id="cart">
+        <!-- Individual item -->
+        <div class="cart-item" data-price="10.00">
+            <span class="item-name">Product Name</span>
+            <button class="quantity-btn" onclick="adjustQuantity(this, -1)">-</button>
+            <span class="quantity">1</span>
+            <button class="quantity-btn" onclick="adjustQuantity(this, 1)">+</button>
+            <button class="delete-btn" onclick="deleteItem(this)">Delete</button>
+            <button class="like-btn" onclick="toggleLike(this)">Like</button>
+            <span class="item-price">$10.00</span>
+        </div>
+
+        <!-- Add more items here -->
+        
+        <!-- Total price -->
+        <div id="total-price">Total: $10.00</div>
+    </div>
+
+    <script src="main.js">
+       
+    </script>
+</body>
+</html>
+
